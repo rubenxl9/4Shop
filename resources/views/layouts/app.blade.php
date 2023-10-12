@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>4Shop</title>
+    <title>4Shop Ruben  </title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -39,12 +39,16 @@
             </ul>
           </div>
         @endif
+        {{ route('admin.categories.create')}},
 
+
+        {{ route('admin.products.index') }}
+        
         @yield('content')
       </main>
 
       <footer class="footer">
-        <p><strong>Mail bij vragen: <a href="mailto:winkelbeheer@scoutingrveer.nl">winkelbeheer@scoutingrveer.nl</a></strong> &middot; S.B.B.S. namens Scouting Raamsdonksveer, Kerklaan 12 4942AR Raamsdonksveer, KvK: 41100325, tel: 0162769096.</p>
+        <p><strong>Mail bij vragen: <a href="mailto:winkelbeheer@scoutingrveer.nl">4Shop@Ruben.nl</a></strong> &middot;Een winkel van 4S. Terheijdenseweg 350, Breda. Mail bij vragen naar info@4s.nl</p>
       </footer>
 
     </div>
