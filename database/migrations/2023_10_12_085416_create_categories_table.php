@@ -11,6 +11,7 @@ class CreateCategoriesTable extends Migration
         Schema::create('categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->boolean('active')->default(true);
             // Voeg hier eventuele andere kolommen toe die je nodig hebt voor je categorieën.
             $table->timestamps();
         });

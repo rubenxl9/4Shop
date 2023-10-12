@@ -60,7 +60,9 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        $category = Category::all();
+        return view('admin.categories.edit')
+                ->with(compact('category'));
     }
 
     /**
@@ -72,7 +74,11 @@ class CategoryController extends Controller
      */
     public function update(Request $request, Category $category)
     {
-        //
+        $category = Category::find($id);
+        $category->name = $request->input('name');
+        $category->save();
+    
+        return redirect()->route('admin.categories.index')->with('success', 'Categorie bijgewerkt');
     }
 
     /**

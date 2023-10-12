@@ -148,5 +148,29 @@ span.collapsing{
 	.cart{
 		height: 24px;
 	}
+	.containert {
+		display: flex;
+		justify-content: right;
+		align-content: center;
+		padding: 20px;
+		background-color: #f0f0f0; /* Achtergrondkleur voor de container */
+	}
 
+	.table {
+		width: 100%;
+		border-collapse: collapse;
+	}
+
+	.table th, .table td {
+		border: 1px solid black;
+		padding: 8px;
+	}
+
+	.table tr:nth-child(odd) {
+		background-color: #fff; /* Witte achtergrond voor oneven rijen */
+	}
+
+	.table tr:nth-child(even) {
+		background-color: #f0f0f0; /* Grijze achtergrond voor even rijen */
+	}
 }
