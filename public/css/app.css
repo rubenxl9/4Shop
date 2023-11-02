@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,700');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Open+Sans&display=swap');
 
 .jumbotron img{
 	width: 70%;
@@ -80,13 +81,13 @@ header{
 	width: 50%;
 	padding: 1em 2em;
 	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.product-title{
+.product-body .product-title {
 	display: flex;
-	justify-content: space-between;
+    justify-content: space-between;
 }
 
 .products .form-control{
@@ -108,6 +109,11 @@ span.collapsing{
 
 .nav-link{
 	color: white !important;
+}
+
+.site-title {
+	font-family: 'Libre Baskerville', serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 @media (max-width: 576px) {
@@ -147,30 +153,5 @@ span.collapsing{
 
 	.cart{
 		height: 24px;
-	}
-	.containert {
-		display: flex;
-		justify-content: right;
-		align-content: center;
-		padding: 20px;
-		background-color: #f0f0f0; /* Achtergrondkleur voor de container */
-	}
-
-	.table {
-		width: 100%;
-		border-collapse: collapse;
-	}
-
-	.table th, .table td {
-		border: 1px solid black;
-		padding: 8px;
-	}
-
-	.table tr:nth-child(odd) {
-		background-color: #fff; /* Witte achtergrond voor oneven rijen */
-	}
-
-	.table tr:nth-child(even) {
-		background-color: #f0f0f0; /* Grijze achtergrond voor even rijen */
 	}
 }

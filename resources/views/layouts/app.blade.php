@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>4Shop Ruben  </title>
+    <title>4Shop - Ruben</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -20,7 +20,8 @@
 <body>
     <div class="container">
       <header class="header d-flex justify-content-between align-items-center">
-        <h3 class="text-muted"><a href="{{ route('home') }}" class="no-link">4Shop</a></h3>
+        <img src="{{ asset('img/4shop-logo.png') }}" alt="tag" width="80">
+        <h3 class="text-muted site-title"><a href="{{ route('home') }}" class="no-link">4Shop - Ruben</a></h3>
         <a href="{{ route('cart') }}"><img class="cart" src="{{ url('img/cart.png') }}" alt=""></a>
       </header>
 
@@ -39,16 +40,17 @@
             </ul>
           </div>
         @endif
+
         {{ route('admin.categories.create')}},
-
-
         {{ route('admin.products.index') }}
-        
+
         @yield('content')
       </main>
 
       <footer class="footer">
-        <p><strong>Mail bij vragen: <a href="mailto:winkelbeheer@scoutingrveer.nl">4Shop@Ruben.nl</a></strong> &middot;Een winkel van 4S. Terheijdenseweg 350, Breda. Mail bij vragen naar info@4s.nl</p>
+        <p>
+          &copy; 4Shop - Ruben
+        </p>
       </footer>
 
     </div>

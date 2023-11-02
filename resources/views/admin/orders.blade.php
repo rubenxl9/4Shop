@@ -19,6 +19,7 @@
 			<th>Speltak</th>
 			<th>Bedrag</th>
 			<th>Betaling</th>
+			<th>Levering</th>
 		</tr>
 		@foreach($orders as $order)
 			<tr>
@@ -32,7 +33,7 @@
 					{!! $order->payed ? '<span class="badge badge-success">betaald</span>' : '<span class="badge badge-warning">niet betaald</span>' !!}
 				</td>
 				<td>
-					{!! $order->bezorgd ? '<span class="badge badge-success">bezorgd</span>' : '<span class="badge badge-warning">niet bezorgd</span>' !!}
+					{!! $order->delivered ? '<span class="badge badge-success">afgeleverd</span>' : '<span class="badge badge-warning">niet afgeleverd</span>' !!}
 				</td>
 			</tr>
 		@endforeach
